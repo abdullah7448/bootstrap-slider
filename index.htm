@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+     <!-- modal start -->
+
+     <section>
+        <div class="container d-flex justify-content-center align-items-center p-3">
+            <div class="modal_cover">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign UP
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">log in</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="login.php" method="post">  <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required><br><br>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required><br><br>
+                                <button type="submit">Login</button>
+                              </form>
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal end -->
+
+    <!-- accordion start -->
+
+        <section>
+            <div class="container ">
+                <div class="accordion-cover p-2 ">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header ">
+                            <button class="accordion-button backgrnd " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Benefits of using accordions
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <ul>
+                                <li>
+                                    Improved organization: They allow you to structure complex information into clear, bite-sized chunks.
+                                </li>
+                                <li>
+                                    Enhanced readability: Users can focus on the specific section they're interested in without getting overwhelmed.
+                                </li>
+                                <li>Space optimization: By hiding content until it's needed, accordions free up valuable screen space.</li>
+                                
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header bg-primary">
+                            <button class="accordion-button collapsed backgrnd" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What is an accordion?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                An accordion is a user interface element that consists of collapsible sections. Clicking on a section title expands or collapses the corresponding content panel, revealing or hiding information. They're useful for displaying large amounts of information in a way that saves space and keeps things organized.
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- accordion end -->
+
+    <!-- slider -->
+
+        <section>
+            <div class="container">
+                <div class="slider_cover">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><i class="fa-regular fa-circle"></i></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./assets/image/carousel-1.jpg" class="d-block w-75 m-auto" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>First slide label</h5>
+                              <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./assets/image/carousel-2.jpg" class="d-block w-75 m-auto" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Second slide label</h5>
+                              <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>    
+
+
+    <!-- slider end -->
+
+
+   
+
+
+
+
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
